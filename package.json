@@ -1,0 +1,20 @@
+{
+  "name": "mock-api-example",
+  "version": "0.1.0",
+  "description": "An example of generating mocks from openapi spec",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksandryackovlev/mock-api-example.git"
+  },
+  "author": "Alex Yackovlev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aleksandryackovlev/mock-api-example/issues"
+  },
+  "homepage": "https://github.com/aleksandryackovlev/mock-api-example#readme"
+}
