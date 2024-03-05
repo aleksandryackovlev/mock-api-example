@@ -569,6 +569,9 @@ components:
           type: boolean
     Customer:
       type: object
+        - id
+        - username
+        - address
       properties:
         id:
           type: integer
@@ -583,6 +586,10 @@ components:
             $ref: "#/components/schemas/Address"
     Address:
       type: object
+        - street
+        - city
+        - state
+        - zip
       properties:
         street:
           type: string
@@ -598,6 +605,9 @@ components:
           example: "94301"
     Category:
       type: object
+      required:
+        - id
+        - name
       properties:
         id:
           type: integer
@@ -638,6 +648,9 @@ components:
           example: 1
     Tag:
       type: object
+      required:
+        - id
+        - name
       properties:
         id:
           type: integer
@@ -646,8 +659,11 @@ components:
           type: string
     Pet:
       required:
+        - id
         - name
         - photoUrls
+        - status
+        - tags
       type: object
       properties:
         id:
