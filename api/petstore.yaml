@@ -612,10 +612,15 @@ components:
         id:
           type: integer
           format: int64
-          example: 1
+          x-chance:
+            natural:
+              min: 2000
+              max: 9999
         name:
           type: string
-          example: Dogs
+          x-chance:
+            sentence:
+              words: 3
     User:
       type: object
       properties:
@@ -655,8 +660,13 @@ components:
         id:
           type: integer
           format: int64
+          x-chance:
+            natural:
+              min: 2000
+              max: 9999
         name:
           type: string
+          x-chance: word
     Pet:
       required:
         - id
@@ -669,16 +679,20 @@ components:
         id:
           type: integer
           format: int64
-          example: 10
+          x-chance:
+            natural:
+              min: 5000
+              max: 9999
         name:
           type: string
-          example: doggie
+          x-chance: first
         category:
           $ref: "#/components/schemas/Category"
         photoUrls:
           type: array
           items:
             type: string
+            x-chance: avatar
         tags:
           type: array
           items:
